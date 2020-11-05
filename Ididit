@@ -1,0 +1,12 @@
+vowels = 'aeiouAEIOU'
+
+def main():
+    sentence = str(input("Input Sentence:")).split()
+    for word in sentence:
+      if word[0] in vowels:
+        print(word + "way", end = " ")
+      else:
+        print(word[1:] + word[0] + "ay", end = " ")
+
+
+main()
